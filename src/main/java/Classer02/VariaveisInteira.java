@@ -1,4 +1,4 @@
-package Classer01;
+package Classer02;
 
 public class VariaveisInteira {
     public static void main(String[] args) {
