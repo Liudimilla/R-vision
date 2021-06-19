@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class LeituraDadosTeclado {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-/*
         System.out.println("Digite seu nome completo: ");
         String nomeCompleto = scan.nextLine();
         System.out.println("Seu nome completo e: " +nomeCompleto);
@@ -22,9 +21,9 @@ public class LeituraDadosTeclado {
         double altura = scan.nextDouble();
         System.out.println("A sua altura e: " +altura);
 
- */
+ /*
         // Opçao 2º
-    System.out.println("Digite o seu nome,\n\r idade,\n\r quantidade de filhos,\n\r altura,\n\rnome bicho de estimaçao");
+    System.out.println("Digite o seu nome, idade, quantidade de filhos, altura,nome bicho de estimaçao");
     String primeiroNome = scan.next();
     int idade = scan.nextInt();
     byte qtdFilhos = scan.nextByte();
@@ -37,6 +36,6 @@ public class LeituraDadosTeclado {
         System.out.println("Quantidade de filhos: " + qtdFilhos);
         System.out.println("Altura: " +altura);
         System.out.println("Tem bichinho de estimaçao? " + temPet);
-
+*/
     }
 }
