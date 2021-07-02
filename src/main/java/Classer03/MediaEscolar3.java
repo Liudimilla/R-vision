@@ -1,7 +1,7 @@
 //Desenvolver um programa para ler 5 notas e armazena-las em um vetor. Calcular e
 //apresentar a média aritmética e o somatório das notas e também apresentar os dados do
 //vetor na saída padrão.
-package Classer03;
+/*package Classer03;
 
 
 public class MediaEscolar3 {
@@ -32,3 +32,4 @@ public class MediaEscolar3 {
 
     }
 }
+*/

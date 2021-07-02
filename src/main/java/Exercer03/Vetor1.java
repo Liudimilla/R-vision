@@ -1,10 +1,10 @@
+/*Questao 19.1;Criar um vetor A com 5 elementos inteiros. Construir um vetor B de
+mesmo tipo e tamanho e com os "mesmo" elementos do vetor A, ou seja, B[i]=A[i].
+ */
  package Exercer03;
 
 import java.util.Scanner;
 
-/*Questao 19.1;Criar um vetor A com 5 elementos inteiros. Construir um vetor B de
-mesmo tipo e tamanho e com os "mesmo" elementos do vetor A, ou seja, B[i]=A[i].
- */
 public class Vetor1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
