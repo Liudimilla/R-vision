@@ -1,6 +1,4 @@
 package Exercer02;
-
-
 /*Questao 17.4; Suponha que a populaçao de um pais A seja da ordem de 80000
 habitantes com uma taxa anual de crescimento de 3% e que a população de B
 seja 20 000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa
