@@ -26,5 +26,16 @@ public class Periodo {
         else {
             System.out.println("Sexo Invalido");
         }
+        /* OPCAO 2 ::
+        switch(turno) {
+        case "n ":
+        case "N":System.out.println("Bom dia, boa aula");break;
+        case " V ":
+        case " v ":("Boa tarde, boa aula");break;
+        case " n":
+        case " N": ("Boa noite, boa aula");break;
+        defaut: System.out.println("Sexo Invalido");
+
+         */
     }
 }

@@ -28,5 +28,40 @@ public class OrdemDecrescente {
         } if (num2 > num3) {
             System.out.println(" " + num2);
         }
+        /*OPÇAO 2 ::
+         if (num1 <= num2 && num1 <= num3 && num2 <= num3) {
+         # num1 e MENOR
+         # num3 e MAIOR
+         # num1 < num2 < num3
+         System.out.println(num3 + " - " + num2 + " - " + num1);
+         } else if (num1 <= num2 && num1 <= num3 && num3 <= num2) {
+         # num1 e MENOR
+         # num2 e MAIOR
+         # num1 < num3 < num2
+         System.out.println(num2 + " - " + num3 + " - " + num1); {
+         } else if (num2 <= num1 && num2 <= num3 && num1 <= num3) {
+         # num2 e MENOR
+         # num3 e MAIOR
+         # num2 < num1 < num3
+         System.out.println(num3 + " - " + num1 + " - " + num2);
+
+         } else if (num2 <= num1 && num2 <= num3 && num1 <= num3) {
+         # num2 e MENOR
+         # num1 e MAIOR
+         # num2 < num3 < num1
+         System.out.println(num1 + " - " + num3 + " - " + num2);
+
+         } else if (num3 <= num1 && num3 <= num2 && num1 <= num2) {
+         # num3 e MENOR
+         # num2 e MAIOR
+         # num3 < num1 < num2
+         System.out.println(num2 + " - " + num1 + " - " + num3);
+         } else if (num2 <= num1 && num2 <= num3 && num2 <= num1) {
+         # num3 e MENOR
+         # num1 e MAIOR
+         # num3 < num2 < num1
+         System.out.println(num1 + " - " + num2 + " - " + num3);
+
+         */
     }
 }

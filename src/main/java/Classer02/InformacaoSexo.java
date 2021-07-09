@@ -11,15 +11,16 @@ public class InformacaoSexo {
         System.out.println("Digite seu sexo F - Feminino, M - Masculino ");
         String sexo = scan.next();
 
-        if (sexo == "F") {
+        if (sexo.equalsIgnoreCase( "F")) {
             System.out.println("Feminino");
         }
-        if (sexo == "M") {
+        if (sexo.equalsIgnoreCase("M")) {
             System.out.println("Masculino");
         } else {
             System.out.println("Sexo Invalido");
         }
 
-
+//Obs.: Qdo se usa variavel string para fazer comparaçao e melhor usar
+      //  equalsIgonoreCase.
     }
 }
