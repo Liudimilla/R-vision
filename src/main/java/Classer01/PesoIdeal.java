@@ -1,4 +1,4 @@
-//Questao 13.12; Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo
+//Questao 12; Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo
 //que calcule seu peso ideal, usando a seguinte formula:(72.7*altura)-58;
 package Classer01;
 

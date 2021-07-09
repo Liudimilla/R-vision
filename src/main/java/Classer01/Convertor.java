@@ -13,6 +13,9 @@ public class Convertor {
         double conv = metro * 100;
 
         System.out.println("O valor em centimetros:" +conv);
+        //OPÇAO 2 || System.out.println("metro + m é igual a" + cm "Cm");
+     
+
 
     }
 }

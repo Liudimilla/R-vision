@@ -11,7 +11,7 @@ public class CalculeArea {
         double area = scan.nextDouble();
 
         double Cal = area * area;
-
+// OPÇAO 2; double area = Math.pow (are.2)
         System.out.println("O calculo da area e: " + Cal);
 
 

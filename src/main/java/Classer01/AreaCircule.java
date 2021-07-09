@@ -11,6 +11,7 @@ public class AreaCircule {
         double r = scan.nextDouble();
         double a;
         a = 3.14 * (r*r);
+        // OPÇAO 2 ; double area = Math.PI * Math.pow(raio,2);
 
         System.out.println("O valor da " +a);
 
