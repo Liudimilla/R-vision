@@ -15,15 +15,14 @@ public class TesteCarroIII {
         System.out.println(van.numPassageiros);
         System.out.println(van.modelo);
 
-        CarroIII fusca = new CarroIII();
-        fusca.marca = "Volkswagem";
-        fusca.modelo = "Fusca";
-        fusca.numPassageiros = 4;
-        fusca.capCombustivel = 30;
-        fusca.consumoCombustivel = 0.15;
+        CarroIII fusca = new CarroIII("Volkswagem", "Picape",10,100,0.2);
+
 
         System.out.println(fusca.marca);
         System.out.println(fusca.modelo);
+        System.out.println(fusca.numPassageiros);
+        System.out.println(fusca.capCombustivel);
+        System.out.println(fusca.consumoCombustivel);
 
         CarroIII gol = new CarroIII();
         gol.marca = "Volkswagem";
@@ -34,6 +33,6 @@ public class TesteCarroIII {
 
         System.out.println(gol.marca);
         System.out.println(gol.modelo);
-
+CarroIII1 carroIII1 = new CarroIII1();
     }
 }

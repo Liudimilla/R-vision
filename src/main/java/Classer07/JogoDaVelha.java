@@ -5,12 +5,14 @@ public class JogoDaVelha {
     int jogoda;
 
     public JogoDaVelha() {
-        char[][] jogoVelha = new char[3][3];
+        jogovelha = new char[3][3];
         jogoda = 1;
-
+    }
 
         boolean validarJogada(int linha, int coluna, char sinal) {
+            if (jogovelha[linha][coluna] == sinal || jogovelha[linha][coluna] == '0');
+            return false;
 
         }
     }
-}
+
