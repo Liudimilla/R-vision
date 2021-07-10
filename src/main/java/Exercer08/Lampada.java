@@ -20,17 +20,13 @@ public class Lampada {
     void desligar() {
         ligado = false;
     }
-
     void mostrarEstado() {
-
-
         if (ligado) {
             System.out.println("Lampada.instance initializer");
         } else {
             System.out.println("Lampada.instance initializer");
         }
     }
-
         void mudarEstado(){
             if (ligado) {
                 desligar();

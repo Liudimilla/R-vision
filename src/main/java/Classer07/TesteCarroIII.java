@@ -1,7 +1,5 @@
 package Classer07;
 
-import Classer06.Carros;
-
 public class TesteCarroIII {
     public static void main(String[] args) {
 
@@ -33,6 +31,6 @@ public class TesteCarroIII {
 
         System.out.println(gol.marca);
         System.out.println(gol.modelo);
-CarroIII1 carroIII1 = new CarroIII1();
+CarroIIIA carroIIIA = new CarroIIIA();
     }
 }

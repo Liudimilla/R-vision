@@ -1,13 +1,13 @@
 package Classer07;
 
-public class CarroIII1 {
+public class CarroIIIA {
     String marca;
     String modelo;
     int numPassageiros;
     double capCombustivel;
     double consumoCombustivel;
 
-    public CarroIII1(String marca, String modelo, int numPassageiros, double capCombustivel ,double consumoCombustivel){
+    public CarroIIIA(String marca, String modelo, int numPassageiros, double capCombustivel , double consumoCombustivel){
       super();
         this.marca = marca;
         this.modelo = modelo;
@@ -15,7 +15,7 @@ public class CarroIII1 {
         this.capCombustivel = capCombustivel;
         this.consumoCombustivel = consumoCombustivel;
     }
-    public CarroIII1(){
+    public CarroIIIA(){
 
     }
 }

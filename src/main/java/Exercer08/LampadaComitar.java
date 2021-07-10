@@ -14,8 +14,5 @@ public class LampadaComitar {
         } else {
             System.out.println("Lampada esta desligada");
         }
-
-
-
 }
 }
