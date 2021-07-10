@@ -6,7 +6,7 @@
  A-álcool, G- gasolina), calcule e imprima o valor a ser pago pelo cliente
 sabendo-se que o preço do litro da gasolina é R$ 2,50 o preço do litro do álcool é R$ 1,90.
 */
-        package Exercer02;
+package Exercer02;
 
 public class TabelaDesconto {
 }

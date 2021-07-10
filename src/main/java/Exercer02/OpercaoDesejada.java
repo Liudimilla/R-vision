@@ -4,5 +4,12 @@ usuário qual operação ele deseja realizar. O resultado da operação deve ser
  */
 package Exercer02;
 
+import java.util.Scanner;
+
 public class OpercaoDesejada {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("OpercaoDesejada.main");
+    }
 }
