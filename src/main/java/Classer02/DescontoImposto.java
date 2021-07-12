@@ -19,7 +19,7 @@ import java.util.Scanner;
 public class DescontoImposto {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double ir, inss ,fgts  ;
+        double ir = 0, inss = 0,fgts = 0;
         double desc = 0;
         double sll = 0;
 
@@ -33,30 +33,38 @@ public class DescontoImposto {
         if (sl == 900.00)  {
             System.out.println("Isento");
 
-        }  if (sl == 1500.00)  {
-            ir = sl -  0.05;
-            inss = sl - 0.10;
-            fgts = sl - 0.11;
+        }
+        if (sl > 900.00 && sl <= 1500)  {
+            ir = (sl /100) * 5;
+            inss = (sl /100) * 10;
+            fgts = (sl /100) * 11;
             desc = ir + inss+ fgts;
             sll = sl - desc;
         }
-        if (sl == 2500.00)
+        if (sl > 1500 && sl >= 2500.00)
         {
-            ir = sl *(-0.05);
-            inss = sl *(-0.10);
-            fgts = sl*(-0.11);
-            desc = ir+inss+fgts;
-            sll = sl - desc;
-        }  if (sl == 2500.01) {
-            ir = sl *(-0.05);
-            inss = sl *(-0.10);
-            fgts = sl*(-0.11);
+            ir = (sl /100) * 5;
+            inss = (sl /100) * 10;
+            fgts = (sl /100) * 11;
             desc = ir+inss+fgts;
             sll = sl - desc;
         }
-
+        if (sl > 2500.00) {
+            ir = (sl /100) * 5;
+            inss = (sl /100) * 10;
+            fgts = (sl /100) * 11;
+            desc = ir+inss+fgts;
+            sll = sl - desc;
+        }
+/*
+   
+ */
         System.out.println("Salario bruto: " +sl);
         System.out.println("Total de descontos: " +desc);
+        System.out.println("(-): IR: " +ir);
+        System.out.println("(-): INSS: " +inss);
+        System.out.println("(-): FGTS: " +fgts);
         System.out.println("Salário Líquido: " + sll);
     }
 }
+

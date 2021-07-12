@@ -5,5 +5,25 @@ de download do arquivo usando este link (em minutos)
 
 package Exercer01;
 
+import java.util.Scanner;
+
 public class VelocidadeLink {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Entre com o tamanho: ");
+        double tamArquivo = scanner.nextDouble();
+
+        System.out.println("Entre a velocidade da internet: ");
+        double velInt = scanner.nextDouble();
+
+        double tem = tamArquivo / velInt;
+
+        System.out.println("Tempo de download: "+tem);
+
+
+
+
+
+    }
 }

@@ -7,5 +7,33 @@ algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de ma
  */
 package Exercer02;
 
+import java.util.Scanner;
+
 public class Fruteira {
-}
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Quantidade (em Kg) de morangos: ");
+        float kg1 = scan.nextFloat();
+        System.out.println("Quantidade (em Kg) de maças: ");
+        float kg2 = scan.nextFloat();
+
+        if (kg1 == 5 && kg1 >= 5);
+        {
+            System.out.println(" O valor da Morango R$ 2,50 por Kg R$ 2,20");
+        }
+           if (kg2 == 5 && kg2 >= 5);
+            {
+                System.out.println("O valor da Maça R$ 1,80 por Kg R$ 1,50");
+            }
+            float kilos = kg1+kg2;
+            float valor = 0;
+
+            if(kilos >= 8 || valor >= 25.00); {
+            System.out.println(" Voce recebera 10% de desconto: ");
+        }
+        }
+
+
+    }
+

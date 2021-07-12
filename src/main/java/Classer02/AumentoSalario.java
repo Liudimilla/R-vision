@@ -11,39 +11,37 @@ package Classer02;
 import java.util.Scanner;
 
 public class AumentoSalario {
- public static double calculoPorcetagem (double salario,double porcetagem){
-     return salario * porcetagem;
+    public static double calculoPorcetagem(double salario, double porcetagem) {
+        return salario * porcetagem;
 
 
- }
-    public static void main (String[] args) {
+    }
+
+    public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        double nov = 0 , at =0 ,am = 0;
+        double nov = 0, at = 0, am = 0;
         System.out.println("Informe o salario 1 para(280,00 e R$ 700,00), 2 para( R$ 1500,00),3 para (1500,00 em diante): ");
         double salarioAtual = scan.nextDouble();
 
-        if (salarioAtual >= 280.00)  {
-            nov = calculoPorcetagem(salarioAtual,0.20);
-            at = salarioAtual + nov;
+        int percentual = 0;
+        if (salarioAtual <= 280) {
+            percentual = 20;
+        } else if (salarioAtual > 280 && salarioAtual < 700) {
+            percentual = 15;
+        } else if (salarioAtual > 700 && salarioAtual < 1500) {
+            percentual = 10;
+        } else if (salarioAtual >= 1500) {
+            percentual = 5;
+        }
+        double aumento = (salarioAtual / 100) * percentual;
+        double salarioAjusto = salarioAtual + aumento;
 
-        } if (salarioAtual >= 700.00)  {
-            nov = calculoPorcetagem(salarioAtual,0.15);
-            at = salarioAtual + nov;
 
-        }else if (salarioAtual >= 1500.00) {
-            nov = calculoPorcetagem(salarioAtual,0.10);
-            at = salarioAtual + nov;
-
-        } else if (salarioAtual >= 1500.01) {
-            nov = calculoPorcetagem(salarioAtual,0.05);
-            at = salarioAtual + nov;
-
+            System.out.println("Salario: " + salarioAtual);
+            System.out.println("Percentual: " + percentual);
+            System.out.println("Aumento: " + aumento);
+            System.out.println("o novo salário após o aumento: " + salarioAjusto);
 
         }
-
-        System.out.println("Valor do salário antes do reajuste R$ " + salarioAtual);
-        System.out.println("o valor do aumento: " + nov);
-        System.out.println("o novo salário após o aumento: " + at);
-
     }
-}
+

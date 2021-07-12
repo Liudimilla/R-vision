@@ -7,5 +7,30 @@ c. o salário líquido. d. calcule os descontos e o salário líquido, conforme 
 2.     Obs.: Salário Bruto - Descontos = Salário Líquido. */
 package Exercer01;
 
+import java.util.Scanner;
+
 public class DescontoSindicado {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Quanto voce ganha por hora: ");
+        double sal = scan.nextDouble();
+
+        System.out.println("Quantas horas voce trabalhou no mes: ");
+        double hor = scan.nextDouble();
+
+        double salB = sal * hor;
+        double inss = (salB /100) * 8;
+        double sind = (salB /100) * 5;
+        double ir = salB /100 * 11;
+        double tDesc = inss + sind + ir;
+        double salL = salB - tDesc;
+
+        System.out.println("Salário bruto: "+salB);
+        System.out.println("Quanto pagou ao INSS: "+inss);
+        System.out.println("Quanto pagou ao sindicato: "+sind);
+        System.out.println("O salário líquido: "+ir);
+        System.out.println("Total de desconto: "+tDesc);
+        System.out.println("O salário líquido: " +salL);
+    }
 }

@@ -1,7 +1,6 @@
 package Exercer02;
 
 import java.util.Scanner;
-
 /*Questao 17.3;Faça um programa que leia e valide as seguintes informaçoes;
 a.Nome: maior que 3 caracteres;
 b.Idade: Entre 0 e 150;

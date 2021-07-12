@@ -18,7 +18,7 @@ public class Aluno {
         System.out.println("Nome: " +nome+ "\nCurso: " +curso);
 
     }
-    void mostarNotas
+
 
 
 }

@@ -8,7 +8,9 @@ Entre 4.0 e 6.0 D o
 Entre 4.0 e zero E O
 algoritmo deve mostrar na tela as notas, a média, o conceito correspondente e a mensagem
  “APROVADO” se o conceito for A, B ou C ou “REPROVADO” se o conceito for D ou E. */
-/*package Exercer02;
+
+package Exercer02;
+
 
 import java.util.Scanner;
 
@@ -16,33 +18,34 @@ public class NotaSemestral {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        float aval;
 
         System.out.println("Informe a primeira nota: ");
         float nota1 = scan.nextInt();
         System.out.println("Informe a segunda nota: ");
         float nota2 = scan.nextInt();
 
-        aval = (nota1 + nota2)/2;
+        double aval = (nota1 + nota2)/2;
 
-        if (aval == 9.0>=&10==){
+        if (aval == 9.0 && aval>= 10){
             System.out.println("Conceito A");
         }
-        if (aval && 7.5 >= 9.0 ){
+        if (aval >= 7.5 && aval < 9) {
             System.out.println("Conceito B");
         }
-        if (aval && 6.0 >= 7.5 ){
+        if (aval >=6 && aval >= 7.5 ){
             System.out.println("Conceito C");
         }
-        if (aval && 4.0 >= 6.0 ){
+        if (aval >= 4 && aval >= 6 ){
             System.out.println("Conceito D");
         }
-        if (aval && 4.0 >= 0 ){
+        if (aval >= 0 && aval < 4){
             System.out.println("Conceito E");
         }
 
+        System.out.println("Nota 1: " +nota1);
+        System.out.println("Nota 2: " +nota2);
+        System.out.println("Media: " +aval);
 
 
     }
 }
-*/

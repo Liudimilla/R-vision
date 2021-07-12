@@ -1,10 +1,8 @@
-package Exercer02;
-
-import java.util.Scanner;
-
 /* Questao 17.1; Faça um programa que peça u,a nota, entre 0 e dez. Mostre uma mensagem
 caso o valor seja invalido e continue pedindo ate que o usuario informe um valor valido.
- */
+
+package Exercer02;
+import java.util.Scanner;
 public class NotaValida {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -24,3 +22,4 @@ public class NotaValida {
     }
 }
 
+*/

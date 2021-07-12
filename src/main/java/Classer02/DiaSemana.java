@@ -32,6 +32,10 @@ public class DiaSemana {
         if (semana == 7) {
             System.out.println("O dia da semana e domingo ");
         }
+       else {
+            System.out.println("Nao e um dia da semana valido");
+        }
+
 
     }
 }
