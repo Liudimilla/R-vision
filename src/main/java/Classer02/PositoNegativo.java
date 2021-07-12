@@ -1,4 +1,4 @@
-//Questao 15.1;Faça um programa que peça um valor e mostre na tela se o valor e posito ou negativo.
+//Questao 16.19;Faça um programa que peça um valor e mostre na tela se o valor e posito ou negativo.
 package Classer02;
 
 import java.util.Scanner;
@@ -18,6 +18,11 @@ public class PositoNegativo {
         else {
             System.out.println("O Numero e negativo : "+num1);
 
+        }
+        if(num1 % 2 ==0) {
+            System.out.println("O Numero e Par");
+        } else {
+            System.out.println("O Numero e Impar");
         }
     }
 }

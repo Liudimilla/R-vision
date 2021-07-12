@@ -33,7 +33,5 @@ public class Fruteira {
             System.out.println(" Voce recebera 10% de desconto: ");
         }
         }
-
-
     }
 
