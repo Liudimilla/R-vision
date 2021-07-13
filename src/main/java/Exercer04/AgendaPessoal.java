@@ -6,5 +6,10 @@ o usuário pode também consultar a agenda, fornecendo o dia e a hora para obter
  */
 package Exercer04;
 
+import java.util.Scanner;
+
 public class AgendaPessoal {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+    }
 }

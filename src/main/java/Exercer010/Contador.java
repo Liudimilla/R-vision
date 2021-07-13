@@ -4,6 +4,19 @@ instanciada.  Crie  métodos  para   zerar,  incrementar  e  retornar
 o  valor  do  contador.  Desenvolva  um   programa  para  testar  essa
 classe. */
 package Exercer010;
-
 public class Contador {
+    private static int cont;
+
+    public static void incrementar() {
+        cont++;
+    }
+    public static void zerar() {
+        cont = 0;
+    }
+    public static int obterValor() {
+        return cont;
+    }
+     {
+
+    }
 }

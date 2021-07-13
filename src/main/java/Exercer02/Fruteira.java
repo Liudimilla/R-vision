@@ -13,25 +13,44 @@ public class Fruteira {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Quantidade (em Kg) de morangos: ");
-        float kg1 = scan.nextFloat();
-        System.out.println("Quantidade (em Kg) de maças: ");
-        float kg2 = scan.nextFloat();
+        System.out.println("Qual fruta voce deseja comprar: MA = Maça OU MO = Morango");
+        String frut = scan.next();
+        System.out.println("Quantos Kilos voce deseja: ");
+        double kg = scan.nextFloat();
 
-        if (kg1 == 5 && kg1 >= 5);
-        {
-            System.out.println(" O valor da Morango R$ 2,50 por Kg R$ 2,20");
-        }
-           if (kg2 == 5 && kg2 >= 5);
-            {
-                System.out.println("O valor da Maça R$ 1,80 por Kg R$ 1,50");
+        float pMorang = 2.20f;
+        float pMoran = 2.50f;
+        float pMacas = 1.80f;
+        float pMaca = 1.50f;
+        int percDesconto = 0;
+        float total = 0;
+        float totalDesc = 0;
+        float a = 0;
+
+
+        if (frut.equalsIgnoreCase("ma")) {
+            if (kg >= 5) {
+                a = (float) (kg * pMaca);
+            } else {
+                a = (float) (kg * pMacas);
             }
-            float kilos = kg1+kg2;
-            float valor = 0;
+            System.out.println("Fruta escolhida Maças: ");
 
-            if(kilos >= 8 || valor >= 25.00); {
-            System.out.println(" Voce recebera 10% de desconto: ");
         }
+            else if (frut.equalsIgnoreCase("mo")) {
+            if (kg >= 5) {
+                a = (float) (kg * pMorang);
+            } else {
+                a = (float) (kg * pMoran);
+
+            }
+            System.out.println("Fruta escolhida Morango: ");
+
+        }
+            System.out.println("Quantidade frutas : " +kg+ ": Kilos");
+
+            System.out.println("O valor a ser pago : " +a);
+
+
         }
     }
-
