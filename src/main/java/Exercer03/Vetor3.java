@@ -6,14 +6,14 @@ package Exercer03;
 
 import java.util.Scanner;
 
-public class Vetor3 {
+public class  Vetor3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
         int[] vetorA = new int[15];
         int[] vetorB = new int[vetorA.length];
 
-        for (int i = 0; i < vetorA.length; i++) {
+        for (int i = 0; i<vetorA.length; i++) {
         System.out.print("Entre com o valor da posiçao: " + i);
         vetorA[i] = scan.nextInt();
 

@@ -20,7 +20,7 @@ public class Vetor6 {
         }
         for (int i = 0; i < vetorB.length; i++) {
             System.out.println("Entre com o valor do VetorB da posiçao" + i);
-            vetorA[i] = scan.nextInt();
+            vetorB[i] = scan.nextInt();
 
             vetorB[i] = vetorA[i] * 2;
         }

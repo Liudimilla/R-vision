@@ -19,11 +19,11 @@ public class Vetor8 {
         }
         for (int i=0; i<vetorB.length; i++){
             System.out.println("Entre com o valor do VetorB da posiçao: " + i);
-            vetorA[i] =scan.nextInt();
+            vetorB[i] =scan.nextInt();
         }
         for (int i=0; i<vetorC.length; i++){
             System.out.println("Entre com o valor do VetorC da posiçao: " + i);
-            vetorA[i] =scan.nextInt();
+            vetorC[i] =scan.nextInt();
         }
         for (int i=0; i<vetorC.length;i++) {
             vetorC[i] = vetorA[i] * vetorB[i];
