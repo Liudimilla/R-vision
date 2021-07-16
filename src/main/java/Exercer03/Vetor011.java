@@ -19,7 +19,7 @@ public class Vetor011 {
         int qtdPares = 0;
         for (int i=0; i<vetorA.length; i++) {
             if (vetorA[i] % 2 == 0) {
-                qtdPares++;
+                qtdPares += 1;
 
             }
 

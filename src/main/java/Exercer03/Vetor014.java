@@ -8,26 +8,30 @@ public class Vetor014 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int[] vetorA = new int[3];
+        int[] vetorA = new int[10];
 
-        for (int i = 0; i < vetorA.length; i++) {
+        for (int i=0; i<vetorA.length; i++) {
             System.out.println("Entre co o valor do vetorA da posiçao: " + i);
             vetorA[i] = scan.nextInt();
         }
         int qtdImpares = 0;
         int total = 0;
-        for (int i = 0; i < vetorA.length; i++) {
+        for (int i=0; i<vetorA.length; i++) {
             if (vetorA[i] % 2 != 0) {
-                total = vetorA[i]/qtdImpares;
+                total += vetorA[i];
+                qtdImpares++;
+            }
+            }
+        System.out.println("Vetor A = ");
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.println(vetorA[i] + " ");
 
             }
-            System.out.println("Vetor A = ");
-                System.out.println(vetorA[i] + " ");
-            }
+        System.out.println();
 
-
+        System.out.println("Soma: "+total);
             System.out.println("Qtd numeros Impares: " + qtdImpares);
-            System.out.println("Qtd media dos numeros Impares: " + total);
+            System.out.println("Qtd media dos numeros Impares: " + (total/qtdImpares));
 
         }
     }

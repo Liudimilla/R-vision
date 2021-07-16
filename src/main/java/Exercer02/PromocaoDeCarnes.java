@@ -15,32 +15,50 @@ public class PromocaoDeCarnes {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Qual tipo de carne voce deseja comprar: ");
-        String carne = scan.next();
+        System.out.println("Qual tipo de carne voce deseja comprar: \n\t1-File;\n\t2-Alcantra;\n\t3-picanha");
+        int carne = scan.nextInt();
         System.out.println("Quantos kilo de carne voce deseja comprar: ");
         float kilo = scan.nextInt();
         System.out.println("Forma de pagamento: 1-Vista; 2-Cartao ");
         int pag = scan.nextInt();
 
-        String file = null, alcatra = null, picanha = null;
+        double precKil = 0;
+        if (carne == 1 && 5 < kilo) {
+            precKil = 4.90;
+            System.out.println(+kilo + "Kg - file");
 
+        } else {
+            precKil = 5.80;
+            System.out.println(+kilo + "Kg - file");
+        }
+        if (carne == 2 && 5 < kilo) {
+            precKil = 5.90;
+            System.out.println(+kilo + "Kg - alcantra");
+        } else {
+            precKil = 6.80;
+            System.out.println(+kilo + "Kg - alcantra");
+        }
+        if (carne == 3 && 5 < kilo) {
+            precKil = 6.90;
+            System.out.println(+kilo + "Kg - picanha");
+        } else {
+            precKil = 7.80;
+            System.out.println(+kilo + "Kg - picanha");
+        }
 
-        if (carne == file && 5 >= kilo);
-        {
-            System.out.println("Preço total: ");
-        }
-        if (carne == alcatra && 5 >= kilo) ;
-        {
-            System.out.println("Preço total: ");
-        }
-        if (carne == picanha && 5 >= kilo) ;
-        {
-            System.out.println("Preço total: ");
-        }
-        System.out.println("Tipo: " + carne);
-        System.out.println("Quantidade de carne: "+ kilo +"Kilo");
-        System.out.println("Tipo de pagamento: "+ pag);
+        double total = kilo * precKil;
+        System.out.println("Quantidade de carne: " + kilo + "Kilo");
+        System.out.println("Tipo de pagamento: " + pag);
         System.out.println("valor do desconto: ");
-        System.out.println("valor a pagar: ");
+        System.out.println("valor a pagar: " + kilo + "Kg" + precKil + " " + total);
+
+
+        if (pag == 1) {
+            double desconto = (total / 100) * 5;
+            System.out.println("Desconto de:" + desconto);
+            System.out.println("Valor a pagar:" + (desconto - total));
+        } else {
+            System.out.println("Valor a pagar:" + total);
+        }
     }
 }
