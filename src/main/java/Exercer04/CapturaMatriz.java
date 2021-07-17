@@ -24,14 +24,15 @@ if (numeros[i][j] % 2 == 0) {
 qtdPares++;
 } else { qtdImpares++;
 }
-} }
+}
+}
     for (int i=0; i<numeros.length;i++) {
         for (int j=0; j<numeros[i].length; j++) {
-            System.out.println(numeros[i][j]+" ");
+            System.out.print(numeros[i][j]+" ");
 }
         System.out.println();
 }
     System.out.println("Pares = " +qtdPares);
-    System.out.println("Pares = " +qtdImpares);
+    System.out.println("Impares = " +qtdImpares);
 }
 }

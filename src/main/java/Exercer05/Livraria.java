@@ -5,4 +5,5 @@ classe   “LivroDeLivraria”  que  represente  os  dados  básicos  de  um  li
 package Exercer05;
 
 public class Livraria {
+    
 }

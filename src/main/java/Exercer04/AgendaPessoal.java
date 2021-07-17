@@ -10,6 +10,80 @@ import java.util.Scanner;
 
 public class AgendaPessoal {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner milla = new Scanner(System.in);
+
+        String[][] compromissos = new String[31][24];
+
+        byte opcao; // Pq e um digito
+        boolean sair = false;
+        while (!sair) {
+            System.out.println("Digite 1 PARA ADICIONAR compromisso");
+            System.out.println("Digite 2 PARA VERIFICAR compromisso");
+            System.out.println("Digite 0 PARA Sair");
+
+            opcao = milla.nextByte();
+
+            if (opcao == 1) {
+                boolean diaValido = false;
+                int dia = 0;
+                while (!diaValido) {
+                    System.out.println("Entre com o dia do mes: ");
+                    dia = milla.nextInt();
+                    if (dia > 0 && dia <= 31) {
+                        diaValido = true;
+                    } else {
+                        System.out.println("Opçao invalida, digite novamente");
+                    }
+                }
+                boolean horaValido = false;
+                int hora = 0;
+                while (!horaValido) {
+                    System.out.println("Entre com o hora do compromisso: ");
+                    hora = milla.nextInt();
+                    if (hora > 0 && hora <= 24) {
+                        horaValido = true;
+                    } else {
+                        System.out.println("Opçao invalida, digite novamente");
+                    }
+                }
+                dia--; //para tirar uma valor pq se colocar 20 o sistema acessar a posiçao 19
+                System.out.println("Digite o compromisso");
+                compromissos[dia][hora] = milla.next();
+
+            } else if (opcao == 2) { // verifica
+                boolean diaValido = false;
+                int dia = 0;
+                while (!diaValido) {
+                    System.out.println("Entre com o dia do mes: ");
+                    dia = milla.nextInt();
+                    if (dia > 0 && dia <= 31) {
+                        diaValido = true;
+                    } else {
+                        System.out.println("Opçao invalida, digite novamente");
+                    }
+                }
+                boolean horaValido = false;
+                int hora = 0;
+                while (!horaValido) {
+                    System.out.println("Entre com o hora do compromisso: ");
+                    hora = milla.nextInt();
+                    if (hora > 0 && hora <= 24) {
+                        horaValido = true;
+                    } else {
+                        System.out.println("Opçao invalida, digite novamente");
+                    }
+                }
+                dia--;
+                System.out.println("O compromisso agendado e : "+"\nDia: "+dia+"\nHora: "+hora);
+                System.out.println("Compromisso: "+ compromissos[dia][hora]);
+            } else if (opcao == 0) {
+                sair = true;
+            } else {
+                System.out.println("Opçao invalida, digite novamente");
+            }
+
+
+        }
     }
 }
+
