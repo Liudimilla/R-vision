@@ -4,6 +4,18 @@ classe   “LivroDeLivraria”  que  represente  os  dados  básicos  de  um  li
  */
 package Exercer05;
 
-public class Livraria {
-    
+public class LivroDeLivraria {
+  String nome;
+  int quantidade;
+  int ano;
+  int NumPagina;
+  String acabamento;
+  String idioma;
+  String autor;
+
+  String conteudo;
+  String idiomaG;
+  String nomeGame;
+  String legenda;
+
 }

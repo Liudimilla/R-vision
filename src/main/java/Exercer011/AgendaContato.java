@@ -8,4 +8,11 @@ contato  e  também  de  todos  os   contatos  da  agenda.
 package Exercer011;
 
 public class AgendaContato {
+    String nome;
+    int tel;
+    String email;
+
+
+
+
 }
