@@ -7,7 +7,7 @@ departamento  e  email.   Cada  Curso  também  pode  ter  vários  alunos  (tip
    a  média  de  cada  aluno,  se  o  mesmo  está  aprovado   (media  maior  ou
 igual  a  7),  e  qual  é  a  média  da  turma.
  */
-package Exercer011;
+package Exercer0011;
 
 public class DadosCurso {
 }

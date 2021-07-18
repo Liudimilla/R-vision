@@ -1,4 +1,4 @@
-package Exercer010;
+package Exercer0010;
 
 public class TesteContador {
     static void imprimirValor() {

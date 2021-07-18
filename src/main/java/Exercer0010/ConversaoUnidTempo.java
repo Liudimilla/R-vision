@@ -7,7 +7,7 @@ segundo  a  lista   abaixo.
 • 1  semana  =  7  dias
  • 1  mês  =  30  dias
  • 1  ano  =  365.25  dias  */
-package Exercer010;
+package Exercer0010;
 
 public class ConversaoUnidTempo {
 }

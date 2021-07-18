@@ -3,7 +3,7 @@
   números),  elevar  à  potência  n.   Desenvolva  um  programa  para
   testar  essa  classe.
  */
-package Exercer010;
+package Exercer0010;
 
 public class Calculadora {
 }

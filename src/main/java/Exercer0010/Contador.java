@@ -3,7 +3,7 @@ atributo  estático  que   é  incrementado  sempre  que  a  classe  for
 instanciada.  Crie  métodos  para   zerar,  incrementar  e  retornar
 o  valor  do  contador.  Desenvolva  um   programa  para  testar  essa
 classe. */
-package Exercer010;
+package Exercer0010;
 public class Contador {
     private static int cont;
 

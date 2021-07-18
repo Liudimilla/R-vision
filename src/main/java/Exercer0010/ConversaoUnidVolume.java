@@ -6,7 +6,7 @@ estáticos   para  conversão  das  unidades  de  volume  segundo  a  lista  aba
 • 1  galão  americano  =  231  polegadas  cúbicas
 • 1  galão  americano  =  3.785  litros
  */
-package Exercer010;
+package Exercer0010;
 
 public class ConversaoUnidVolume {
 }
