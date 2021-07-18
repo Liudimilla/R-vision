@@ -5,7 +5,7 @@ o  usuário  entrar  com  o   nome  da  Agenda  e  em  seguida  3  contatos.
 Crie  métodos  que  retornem   uma  String  com  a  informação  de  cada
 contato  e  também  de  todos  os   contatos  da  agenda.
  */
-package Exercer0011;
+package Exercer11;
 
 public class AgendaContato {
     String nome;

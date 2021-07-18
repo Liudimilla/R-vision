@@ -6,7 +6,7 @@ a  lista  abaixo.
 • 1  milha  quadrada  =  640  acres
 • 1  acre  =  43.560  pés  quadrados
  */
-package Exercer0010;
+package Exercer10;
 
 public class ConversaoUnidArea {
 }

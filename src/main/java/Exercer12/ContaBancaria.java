@@ -10,7 +10,7 @@ $ ContaPoupanca$ • atributo$diaRendimento$
  $ • Criar$contas$ • Sacar$um$valor$das$contas$ • Depositar$ •
  Mostrar$um$novo$saldo$a$partir$de$um$rendimento$ • Mostrar$os$dados$da$conta$do$cliente$ $
  */
-package Exercer0012;
+package Exercer12;
 
 public class ContaBancaria {
 }
