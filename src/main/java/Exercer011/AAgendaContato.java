@@ -1,4 +1,4 @@
-package Exercer011;
+/* package Exercer011;
 
 public class AAgendaContato {
     public static void main(String[] args) {
@@ -9,3 +9,5 @@ public class AAgendaContato {
         primeiro.tel;
     }
 }
+
+ */

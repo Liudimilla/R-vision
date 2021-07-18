@@ -14,40 +14,42 @@ public class Vetor019 {
 
         int[] nota1 = new int[10];
         int[] nota2 = new int[nota1.length];
+        double[] resultados = new double[nota1.length];
+
         for (int i = 0; i < nota1.length; i++) {
-            System.out.println("Entre com a nota 1 " + (i + 1));
+            System.out.println("Entre com a nota 1 Aluno:" + (i + 1));
             nota1[i] = milla.nextInt();
 
-            System.out.println("Entre com a nota 2: " + (i + 1));
+            System.out.println("Entre com a nota 2 Aluno : " + (i + 1));
             nota2[i] = milla.nextInt();
-        }
-        int result = 0;
-        int media = 0;
 
-        for (int i = 0; i < nota2.length; i++) {
-            media = (nota1[i] + nota2[i]) / 2;
-        }
-            if (media > 7) {
-                System.out.println("Aprovado");
-                result++;
-            } else {
-                System.out.println("Reprovado");
-                result++;
+            resultados[i] = (nota1[i] + nota2[i]) / 2;
+
             }
-/*
+
             System.out.print("Nota 1 = ");
             for (int i = 0; i < nota1.length; i++) {
-                System.out.println(nota1[i] + "");
+                System.out.print(nota1[i] + ": ");
             }
-                System.out.println();
+            System.out.println();
 
-                System.out.print("Nota 2 = ");
-                for (int i = 0; i < nota2.length; i++) {
-                    System.out.println(nota2[i] + "");
-                }
-                    System.out.println();
-*/
-                    //System.out.println(" Resultado de sua avaliaçao " + result);
-                }
+            System.out.print("Nota 2 = ");
+            for (int i = 0; i < nota2.length; i++) {
+                System.out.print(nota2[i] + ": ");
             }
+            System.out.println();
+
+            System.out.println("Resultado:");
+            for (int i = 0; i < resultados.length; i++) {
+                if (resultados[i] >=7) {
+                    System.out.println(resultados[i] +" - Aprovado");
+                } else {
+                    System.out.println(resultados[i] + " - Reprovado");
+
+            }
+
+
+        }
+    }
+}
 
