@@ -102,7 +102,26 @@ public LampadaI() {
         this.ligado = ligado;
     }
 
-
-
- }
-
+public void ligar() {
+    //ligado = true;
+    setLigado(true); // opao 2 Metodo de encapsulamento
+}
+public void desligar(){
+    //ligado = false;
+    setLigado(false); // opao 2 Metodo de encapsulamento
+}
+public void mostrarEstado() {
+     if (isLigado()) { // isligado utilizando o metodo do GET e SET
+         System.out.println("Lampada esta ligada");
+     } else {
+         System.out.println("Lampada esta desligado");
+     }
+}
+public void mudarEstado() {
+    if (isLigado()) {
+        desligar();
+    } else {
+        ligar();
+    }
+}
+}
