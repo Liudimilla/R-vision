@@ -1,4 +1,5 @@
-/*Questao 27.1;
+/*Questao 27.1; Escreva  uma  classe  para  representar  uma
+lâmpada.  Desenvolva  métodos   para  ligar,  desligar  a  lampada.
  */
 package Exercer08;
 
@@ -22,7 +23,7 @@ public class Lampada {
     }
     void mostrarEstado() {
         if (ligado) {
-            System.out.println("Lampada.instance initializer");
+            System.out.println("Lampada esta ligada");
         } else {
             System.out.println("Lampada.instance initializer");
         }

@@ -1,4 +1,4 @@
-package Exercer07;
+/*package Exercer07;
 
 import java.util.Scanner;
 
@@ -20,3 +20,4 @@ public class JogoVelhaIIEx6 {
         }
     }
 }
+*/

@@ -12,32 +12,47 @@ public class ContaCorrente {
     int numero;
     int saldo;
     String status;
-    int limite;
+    int limiteEsp;
+    double valorEspecialUsado = 0;
     boolean liberado;
+    boolean especial;
+    int qsacar;
 
-    public void realizarSaque() {
-        if (liberado()) {
-            System.out.println("Seu saque esta liberado");
-        } else {
-            System.out.println("Nao ha limite no momento");
+
+    boolean realizarSaque(double qSacar) {
+        //tem saldo na conta
+        if (saldo < qSacar) {
+            saldo -= qSacar;
+            return true;
+        } else { // nao tem saldo na conta   */
+            if (especial) {
+                double limite = limiteEsp + saldo;
+                if (limite >= qsacar) {
+                    saldo -= qsacar;
+                    return true;
+                } else {
+                    return false;
+                }
+
+            } else {
+                return false;
+            }
+
+
         }
+
+
     }
 
-    public void despositarDinheiro() {
-        if (liberado()) {
-            System.out.println("deposito realizado");
-        } else {
-            System.out.println("Conta nao localizada");
-
-        }
+    void depositar(double valorDepositado) {
+        saldo += valorDepositado;
     }
-
-    private boolean liberado() {
-        return true;
+    void consultarSaldo() {
+        System.out.println("Saldo atual da conta = "+saldo);
     }
-    public void indisponivel() {
-    }
-
-    public void diponivel() {
+    boolean verificarUsoChequeEspecial() {
+        return saldo < 0;
     }
 }
+
+
