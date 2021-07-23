@@ -5,5 +5,38 @@ programa que verifique se um dado vetor A de 10 elementos inteiros é um palínd
  diante até verificar todos os elementos ou chegar a conclusão que o vetor não é um palíndromo.
  */
 package Exercer03;
+
+import java.util.Scanner;
+
 public class Vetor024 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int[] vetorA = new int[10];
+
+        for (int i=0; i<vetorA.length; i++) {
+            System.out.println("Entre com a posiçao" +i);
+            vetorA[i] = scan.nextInt();
+
+
+            } // para achar o Números palíndromos;
+        boolean palíndromo = true;
+        for (int i=0; i<vetorA.length/2; i++) {
+            if (vetorA[i] != vetorA[vetorA.length - 1 - i]) {
+                palíndromo = false;
+                break;
+            }
+        }
+        System.out.println("VetorA = ");
+        for (int i=0; i<vetorA.length; i++) {
+            System.out.print(vetorA[i] + " ");
+        }
+        System.out.println( );
+
+        if (palíndromo) {
+            System.out.println("Palindromo");
+        } else {
+            System.out.println("Nao e Palindromo");
+        }
+    }
 }

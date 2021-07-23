@@ -2,6 +2,5 @@
 Desenvolva  uma  classe   para  representar  o  Jogo  da  Velha.  Desenvolva  uma  classe  para
 testar o Jogo.*/
 package Exercer09;
-
 public class JogoDaVelhaIV {
 }
