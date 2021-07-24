@@ -7,32 +7,19 @@ public class MaiorNumero {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+
         int menor;
-        int maior;
+        int maior = Integer.MIN_VALUE;
 
-        final int CONTADOR = 5;
+        for (int i = 0; i < 5; i++){
 
-        System.out.println("Informe um valor");
-        int numl = scan.nextInt();
-
-          maior = numl;
-          menor = numl;
-
-        for (int i = 1; i < CONTADOR; i++) {
             System.out.println("Informe um valor");
-            numl = scan.nextInt();
+            int numl = scan.nextInt();
 
-
-
-            if (numl > maior) {
-                maior = numl;
-            }
-            if (numl < menor) {
-                menor = numl;
-            }
-
-            System.out.println("O menor número lido foi: " + menor);
-            System.out.println("O maior número lido foi: " + maior);
+                if (numl > maior) {
+                    maior = numl;
+                }
         }
-    }
-}
+                System.out.println("O maior número lido foi: " + maior);
+            }
+        }

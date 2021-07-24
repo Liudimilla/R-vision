@@ -8,7 +8,14 @@ public class SomaMedia {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double media;
+        int num;
+        int soma = 0;
+                
+                for (int i=0; i<5; i++) {
 
+                    System.out.println("Digite um numero ");
+                    num = scan.nextInt();
+        /* Opçao 2
         System.out.println("Digite hm numero ");
         int num1 = scan.nextInt();
 
@@ -26,8 +33,10 @@ public class SomaMedia {
 
         int soma = num1 + num2 + num3 + num4 + num5;
         media = soma/5;
-
-
+*/
+        soma += num;
+    }
+    media = soma /5;
         System.out.println("a soma dos numeros; " +soma);
         System.out.println("a soma dos numeros; " +media);
     }

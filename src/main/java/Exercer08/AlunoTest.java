@@ -1,7 +1,5 @@
 package Exercer08;
 
-import Exercer09.Aluno;
-
 import java.util.Scanner;
 
 public class AlunoTest {

@@ -9,48 +9,91 @@ package Exercer09;
 import java.util.Scanner;
 
 public class ContaCorrente {
-    String numConta;
-    String valor;
-    boolean saldo;
-    boolean status;
+    private String numConta;
+    private String agencia;
+    private boolean especial;
+    private double limiteEspecial;
+    private double saldo;
 
-    void dados() {
-        System.out.println("Numero da conta: " + numConta + "\n Saldo da conta" + valor + "  ");
+
+    public ContaCorrente( ) {
+
+}
+    public ContaCorrente(String numConta, String agencia, boolean especial, double saldo, double limiteEspecial ) {
+        this.numConta = numConta;
+        this.agencia = agencia;
+        this.especial = especial;
+        this.limiteEspecial = limiteEspecial;
+        this.saldo = saldo;
     }
 
-
-    void consultar () {
-        saldo = true;
+    public String getNumConta() {
+        return numConta;
     }
-    void consultarSem () {
-        saldo = false;
 
+    public void setNumConta(String numConta) {
+        this.numConta = numConta;
     }
-    void realizarSaque(){
-        if (saldo) {
-            System.out.println("Tem saldo para realizar saque");
+
+    public String getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+
+    public boolean isEspecial() {
+        return especial;
+    }
+
+    public void setEspecial(boolean especial) {
+        this.especial = especial;
+    }
+
+    public double getLimiteEspecial() {
+        return limiteEspecial;
+    }
+
+    public void setLimiteEspecial(double limiteEspecial) {
+        this.limiteEspecial = limiteEspecial;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public boolean realizarSaque(double quantiaSacar){
+        if (saldo > quantiaSacar) {
+            saldo -= quantiaSacar;
+            return true;
         } else {
-            System.out.println("Nao tem saldo para realizar saque");
+            if (especial) {
+                double limite = limiteEspecial + saldo;
+                if (limite>=quantiaSacar) {
+                    saldo -= quantiaSacar;
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;//nao e especial
+            }
         }
     }
-
-
-
-
-    ////////
-    void limite () {
-        status = true;
+    public void depositar (double valorDeposito) {
+        saldo += valorDeposito;
      }
-     void semLimite () {
-        status = false;
+     public void consultarSaldo () {
+         System.out.println("Saldo atual da conta = " +saldo);
 
      }
-     void verificarSaldo () {
-        if (status) {
-            System.out.println("Cliente nao esta usando o saldo especial");
-        } else {
-            System.out.println("Cliente esta usando o saldo especial");
+     public boolean verificarUsoChequeEspecial() {
+        return saldo < 0;
         }
      }
-    }
 
