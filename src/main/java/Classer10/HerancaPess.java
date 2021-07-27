@@ -1,4 +1,4 @@
-package Classer09;
+package Classer10;
 public class HerancaPess {
     private String nome;
     private String endereço;
@@ -65,4 +65,8 @@ public class HerancaPess {
     public void setTelefoneCelular(String telefoneCelular) {
         this.telefoneCelular = telefoneCelular;
     }
-}
+
+    public String obterEtiquetaEndereco() {
+    return endereço;
+    }
+    }
