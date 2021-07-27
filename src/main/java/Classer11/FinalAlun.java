@@ -53,4 +53,11 @@ public class FinalAlun {
         //this.setTelefone("2345-1234");
         //OBS: Qdo usamos o FINAL nao podemos usar o SUPER ou THIS
     }
+  public String toString() {
+        String s = curso + "\n";
+        for (double nota : notas){
+        s += nota + " ";
+    }
+    return s;
+}
 }
