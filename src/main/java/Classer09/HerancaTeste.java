@@ -9,7 +9,7 @@ public class HerancaTeste {
 
         aluno.setNome("Maria");
         /* Opçao 2
-        HerancaPess herancaAlun = new HerancaPess();
+        AbstractPess herancaAlun = new AbstractPess();
         aluno.get
          */
 

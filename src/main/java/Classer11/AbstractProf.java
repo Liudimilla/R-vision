@@ -1,6 +1,6 @@
-package Classer10;
+package Classer11;
 
-public class HerancaProf extends HerancaPess {
+public class AbstractProf extends AbstractPess {
 
     private double salario;
     private String [] nomeCurso;
@@ -28,5 +28,12 @@ public class HerancaProf extends HerancaPess {
         String s = "Endereco do professor: ";
         s += super.getEndereço();
         return  s;
+    }
+
+    @Override
+    public void bterEtiquetaEndereco() {
+        System.out.println("imprimindo endereço do professor");
+        System.out.println(this.obterEtiquetaEndereco());
+
     }
 }

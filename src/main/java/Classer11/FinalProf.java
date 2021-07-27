@@ -1,6 +1,6 @@
-package Classer10;
+package Classer11;
 
-public class HerancaProf extends HerancaPess {
+public class FinalProf {
 
     private double salario;
     private String [] nomeCurso;
@@ -25,8 +25,9 @@ public class HerancaProf extends HerancaPess {
 
     }
     public String obterEtiquetaEndereco() {
-        String s = "Endereco do professor: ";
-        s += super.getEndereço();
-        return  s;
+        String s = "Endereço do professor: ";
+       // s += super.getEndereço();
+
+        return s;
     }
 }
