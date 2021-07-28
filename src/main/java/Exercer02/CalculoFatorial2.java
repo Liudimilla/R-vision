@@ -12,7 +12,15 @@ public class CalculoFatorial2 {
         System.out.println("Digite um numero: ");
         int num = milla.nextInt();
 
+        System.out.println("Fatorial de "+num);
+
         System.out.println(num+"! = ");
-        int
+
+        int fatorial = 1;
+        for (int i=num; i>1; i--) {
+            fatorial *= i;
+            System.out.print(i+ " . ");
+        }
+        System.out.print("1 = "+fatorial);
     }
 }

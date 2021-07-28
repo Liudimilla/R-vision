@@ -8,5 +8,33 @@ Escreva um programa para calcular e imprimir na tela o imposto a ser pago de
 6 contribuintes, sendo 3 PJ e 3 PF
  */
 package Exercer13;
-public class ImpostoDeRenda {
+//contribuinte:
+public abstract class ImpostoDeRenda {
+    private String nome;
+    private double rendaBruta;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getRendaBruta() {
+        return rendaBruta;
+    }
+
+    public void setRendaBruta(double rendaBruta) {
+        this.rendaBruta = rendaBruta;
+    }
+    public abstract double calcularImposto();
+
+    @Override
+    public String toString() {
+        String s = "Nome: "+nome;
+        s += " ;rendaBruta: "+rendaBruta;
+        return s;
+
+    }
 }
