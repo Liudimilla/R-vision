@@ -6,8 +6,24 @@
  classes  Cubo  e  Cilindro  e  Piramide  que  estendem  a  classe Figura3D.
  */
 package Exercer14;
-public interface FiguraGeometrica {
+public abstract class FiguraGeometrica {
+//obs.: como tem atributo nao pode ser INTERFACE tem ser CLASS
+    public String nome;
+    public String cor;
 
-    public String nome = null;
-    public String cor = null;
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
 }

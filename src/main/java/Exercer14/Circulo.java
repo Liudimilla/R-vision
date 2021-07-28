@@ -1,6 +1,17 @@
-/*package Exercer14;
+// Exer.:44.1*
+package Exercer14;
 
-public interface Circulo extends Figura2D{
+public class Circulo extends Figura2D {
+
+    private double raio;
+
+    public double getRaio() {
+        return raio;
+    }
+
+    public void setRaio(double raio) {
+        this.raio = raio;
+    }
 }
 
- */
+

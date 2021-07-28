@@ -1,5 +1,5 @@
-/*/ Exer.:43.1*
+// Exer.:44.1*
 package Exercer14;
-public interface Figura2D extends FiguraGeometrica implements Circulo, Quadrado, Triangulo {
+public abstract class Figura2D extends FiguraGeometrica {
+    //pode ser abstrada pq nao tem nada
 }
-*/
