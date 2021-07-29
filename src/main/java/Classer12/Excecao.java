@@ -7,7 +7,7 @@ public class Excecao {
             int[] vetor = new int[4];
             System.out.println("Antes da exception ");
 
-            vetor[4] = 1; // ERRO para testa exececao
+            vetor[4] = 1; // ERRO para gerar testa exececao
             System.out.println("Esse texto nao sera impresso ");
         } catch(ArrayIndexOutOfBoundsException exception) {
             System.out.println("Excecao ao acessar um indice do vetor que nao existe");
