@@ -17,4 +17,21 @@ public class Vetor037 {
             vetorA[i] = milla.nextInt();
         }
         for (int i = 0; i < vetorA.length; i++) {
+            vetorB[i] = 1;
+            for (int j = 1; j <= vetorA[i]; j++) {
+                vetorB[i] *= j;
+            }
+        }
+        System.out.print("Vetor A = ");
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.print(vetorA[i] + " ");
+        }
+        System.out.println();
+
+        System.out.print("Vetor B = ");
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.print(vetorB[i] + " ");
+        }
+        System.out.println( );
+    }
 }
