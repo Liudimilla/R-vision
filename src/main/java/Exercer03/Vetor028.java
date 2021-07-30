@@ -4,5 +4,34 @@ vetor B de mesmo tipo e tamanho e com os mesmos elementos de A, sendo que estes
   último de B, o segundo elemento de A passa a ser o penúltimo de B e assim por
    diante. */
 package Exercer03;
+
+import java.util.Scanner;
+
 public class Vetor028 {
+    public static void main(String[] args) {
+
+        Scanner milla = new Scanner(System.in);
+
+        int[] vetorA = new int[10];
+        int[] vetorB = new int[vetorA.length];
+
+        for (int i = 0; i < vetorA.length; i++) {
+
+            System.out.println("Entre com o valor da posiçao" + i);
+            vetorA[i] = milla.nextInt();
+
+            vetorB[vetorA.length - i - 1] = vetorA[i];
+        }
+        System.out.print("Vetor A = ");
+        for (int i = 0; i < vetorA.length; i++) {
+            System.out.print(vetorA[i] + " ");
+        }
+        System.out.println();
+
+        System.out.print("Vetor B = ");
+        for (int i = 0; i < vetorB.length; i++) {
+            System.out.print(vetorB[i] + " ");
+    }
+        System.out.println();
+}
 }
