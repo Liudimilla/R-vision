@@ -10,4 +10,70 @@ igual  a  7),  e  qual  é  a  média  da  turma.
 package Exercer11;
 
 public class DadosCurso {
+    private String nome;
+    private String horario;
+    private DadosProfessor professor;
+    private DadosAluno[] alunos;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getHorario() {
+        return horario;
+    }
+
+    public void setHorario(String horario) {
+        this.horario = horario;
+    }
+
+    public DadosProfessor getProfessor() {
+        return professor;
+    }
+
+    public void setProfessor(DadosProfessor professor) {
+        this.professor = professor;
+    }
+
+    public DadosAluno[] getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(DadosAluno[] alunos) {
+        this.alunos = alunos;
+    }
+    public String obterInfo(){
+        String info = "Nome do Curso = "+nome+ "\n";
+
+        if(professor != null) {
+            info += professor.obterInfo();
+        }
+        if (alunos != null) {
+            System.out.println(" ***** Alunos *******");
+            for (DadosAluno aluno: alunos) {
+                if (aluno != null) {
+                    info += aluno.obterInfo();
+                    info += "\n";
+                }
+            }
+            info += "\nMedia da turma = " +obterMediaTurma();
+
+        }
+        return info;
+    }
+    public double obterMediaTurma(){
+        double soma = 0;
+        for (DadosAluno aluno: alunos) {
+            if (aluno != null) {
+                soma += aluno.obterMedia();
+            }
+        }
+        return soma/alunos.length;
+    }
+
 }
+
