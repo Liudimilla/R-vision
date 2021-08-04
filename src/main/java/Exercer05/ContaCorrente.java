@@ -3,6 +3,12 @@
 
  */
 package Exercer05;
+public class ContaCorrente {
+    String nomeBanco;
+    String numero;
+    String Agencia;
+    boolean especial;
+    double limiteEspecial;
+    double saldo;
 
-public class SaldoEmprestimo {
 }

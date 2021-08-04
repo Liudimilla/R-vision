@@ -4,5 +4,20 @@
  */
 package Exercer05;
 
+import java.util.Date;
+
 public class Biblioteca {
+    String nome;
+    String autor;
+    int qtdPaginas;
+    int anoLancamento;
+    String isbn;
+    String produto;
+    String tipoCapa;
+    String idioma;
+
+    boolean emprestado;
+    Date dataEmtrega;
+    String emprestadoA;
+
 }

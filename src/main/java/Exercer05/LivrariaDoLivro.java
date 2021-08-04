@@ -8,7 +8,7 @@ public class LivrariaDoLivro {
         mistérioRevelado.acabamento = "Brochura";
         mistérioRevelado.autor = "Hill, Napoleon";
         mistérioRevelado.idioma = "Portugues";
-        mistérioRevelado.NumPagina = 208;
+        mistérioRevelado.numPagina = 208;
         mistérioRevelado.quantidade = 1;
 
         LivroDeLivraria game = new LivroDeLivraria();
@@ -17,5 +17,30 @@ public class LivrariaDoLivro {
         game.idiomaG = "Inglês";
         game.legenda = "Português";
 
+        LivroDeLivraria livraria = new LivroDeLivraria();
+
+        livraria.nome = " Mastering ExtJS";
+        livraria.autor = "Loiane Groner";
+        livraria.preco = 63.80;
+
+        System.out.println("**** Livro 1 ******");
+        System.out.println("Nome do livro = " + mistérioRevelado.nome);
+        System.out.println("Ano de Lançamento = " + mistérioRevelado.ano);
+        System.out.println("Acabamento do livro = " + mistérioRevelado.acabamento);
+        System.out.println("Nome do Autor = " + mistérioRevelado.autor);
+        System.out.println("Idioma do livro = " + mistérioRevelado.idioma);
+        System.out.println("Numero de paginas = " + mistérioRevelado.numPagina);
+        System.out.println("Quantida de Livros = " + mistérioRevelado.quantidade);
+
+        System.out.println("\n**** Livro 2 ******\b");
+        System.out.println("Conteudo = " + game.conteudo);
+        System.out.println("Nome do Game = " + game.nomeGame);
+        System.out.println("Idioma do jogo = " + game.idiomaG);
+        System.out.println("legenda do jogo = " + game.legenda);
+
+        System.out.println("\n**** Livro 3 ******\r");
+        System.out.println("Nome do livro = " + livraria.nome);
+        System.out.println("Nome do Autor = " + livraria.autor);
+        System.out.println("Valor = " + livraria.preco);
     }
 }

@@ -1,5 +1,5 @@
 //exerc36.1
-package Exercer011;
+package Exercer11;
 
 import Exercer11.AgendaContato;
 import Exercer11.Contato;

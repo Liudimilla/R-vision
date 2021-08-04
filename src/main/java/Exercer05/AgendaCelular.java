@@ -3,8 +3,8 @@ da  agenda  do  seu  celular. */
 package Exercer05;
 public class AgendaCelular {
    String nome;
-   String telefoneMovel;
-   String telefoneFixo;
+   String[] telefoneMovel;
+   String[] telefoneFixo;
    String endereco;
    String email;
 }

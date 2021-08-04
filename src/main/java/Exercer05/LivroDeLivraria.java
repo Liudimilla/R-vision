@@ -8,7 +8,7 @@ public class LivroDeLivraria {
   String nome;
   int quantidade;
   int ano;
-  int NumPagina;
+  int numPagina;
   String acabamento;
   String idioma;
   String autor;
@@ -17,5 +17,6 @@ public class LivroDeLivraria {
   String idiomaG;
   String nomeGame;
   String legenda;
+  double preco;
 
 }

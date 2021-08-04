@@ -4,15 +4,15 @@
 package Exercer06;
 
 public class LigarDesligar {
-    private String modelo;
-    private String tensao;
-    private int potencia;
-    private String cor;
-    private String tipoLuz;
-    private int garantiaMeses;
-    private String[] tipos;
-    private boolean tipoAbajur;
-    private boolean ligada;
+    public String modelo;
+    public String tensao;
+    public int potencia;
+    public String cor;
+    public String tipoLuz;
+    public int garantiaMeses;
+    public String[] tipos;
+    public boolean tipoAbajur;
+    public boolean ligada;
 
     public void mostrarEstado(){
         if (ligada()) {
