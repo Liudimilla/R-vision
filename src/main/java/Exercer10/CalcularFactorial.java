@@ -2,21 +2,18 @@
  de um número na classe. Calculadora do exercício anterior.
  */
 package Exercer10;
-
 public class CalcularFactorial {
+
+public static int fatorial(int num) {
+
+if (num == 0) {
+return 1;
 }
-
-
-/*
-//x*n
-//x * x * X * X (n vezes)
-public static int potencia (int num1, int num2) {
-
 int total = 1;
-for (int i=1; i<num2; i++) {
-total *= num1;
+for (int i=num; i>1; i--) {
+    total *= i;
 }
-returm total;
+return total;
+}
 }
 
- */

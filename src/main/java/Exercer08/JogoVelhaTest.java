@@ -25,10 +25,11 @@ public class JogoVelhaTest {
                 System.out.println("Vez do jogador 2. Escolha linha e coluna");
                 sinal = 'O';
             }
+
             linha = valor("Linha", scan);
             coluna = valor("Coluna", scan);
 
-            if (!jogoVelha.validarJogada(linha, coluna, sinal)) {
+            if(!jogoVelha.validarJogada(linha, coluna, sinal)) {
                 System.out.println("Posiçao ja usada, tente novamente ");
             }
             jogoVelha.imprimirTabuleiro();
@@ -39,14 +40,15 @@ public class JogoVelhaTest {
             } else if (jogoVelha.verificarGanhador('O')) {
                 ganhou = true;
                 System.out.println("Parabens, jogador 2 ganhou! ");
-
-            } else if (jogoVelha.jogada() > 9) {
+            } else if (jogoVelha.jogada > 9) {
                 ganhou = true;
                 System.out.println("Ninguem ganhou essa partida. ");
             }
+
         }
     }
-    static int valor (String tipoValor, Scanner scan){
+
+     static int valor (String tipoValor, Scanner scan){
         int valor = 0;
         boolean valorValida = false;
         while (!valorValida) {
@@ -62,3 +64,4 @@ public class JogoVelhaTest {
         return valor;
     }
 }
+

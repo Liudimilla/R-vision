@@ -9,13 +9,12 @@ public class JogoVelha {
         int jogada = 1;
 
         boolean validarJogada ( int linha, int coluna, char sinal){
-            if (jogoVelha[linha][coluna] == 'X' || jogoVelha[linha][coluna] == '0') {
+            if (jogoVelha[linha][coluna] == sinal || jogoVelha[linha][coluna] == '0') {
                 return false;
             } else {
                 jogoVelha[linha][coluna] = sinal;
                 jogada++;
                 return true;
-
             }
         }
         void imprimirTabuleiro() {
@@ -27,7 +26,7 @@ public class JogoVelha {
             }
         }
 
-        public boolean verificarGanhador (char sinal){
+        boolean verificarGanhador(char sinal){
             if ((jogoVelha[0][0] == sinal && jogoVelha[0][1] == sinal && jogoVelha[0][2] == sinal) ==
                     (jogoVelha[1][0] == sinal && jogoVelha[1][1] == sinal && jogoVelha[1][2] == sinal) ||
                     (jogoVelha[2][0] == sinal && jogoVelha[2][1] == sinal && jogoVelha[2][2] == sinal) ||
@@ -37,7 +36,6 @@ public class JogoVelha {
                     (jogoVelha[0][0] == sinal && jogoVelha[1][1] == sinal && jogoVelha[2][2] == sinal) ||
                     (jogoVelha[0][2] == sinal && jogoVelha[1][1] == sinal && jogoVelha[2][0] == sinal)) {
                   return true;
-
             }
             return false;
         }
@@ -48,5 +46,4 @@ public class JogoVelha {
             return false;
         }
 
-    public boolean jogada() {
     }
