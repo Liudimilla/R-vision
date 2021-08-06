@@ -7,5 +7,7 @@ métodos  de  acordo  com  as  regras  de  cada  figura  geométrica
 (crie  os atributos  necessários).
  */
 package Exercer14;
-public class DimensaoSuperficial {
+public interface DimensaoSuperficial {
+
+    double calcularArea();
 }
